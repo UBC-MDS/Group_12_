@@ -7,4 +7,8 @@
 
 ## Contributors
 
-None yet. Why not be the first?
+* Ruidan Ni <niruidan@gmail.com>
+
+* Kexin Zhao <>
+
+* Frank Lu <>
