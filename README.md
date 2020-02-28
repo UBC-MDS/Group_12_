@@ -1,4 +1,4 @@
-## group_12 
+## group_12
 
 ![](https://github.com/rita-ni/group_12/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/rita-ni/group_12/branch/master/graph/badge.svg)](https://codecov.io/gh/rita-ni/group_12) ![Release](https://github.com/rita-ni/group_12/workflows/Release/badge.svg)
 
@@ -13,7 +13,8 @@ pip install -i https://test.pypi.org/simple/ group_12
 ```
 
 ### Features
-- TODO
+- sharpen:
+  - This function enhances the edges in the image and returns a sharper-looking image.  At this moment, this function is restricted to gray-scale images only 
 
 ### Dependencies
 
