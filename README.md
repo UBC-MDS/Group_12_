@@ -1,4 +1,4 @@
-## group_12
+## group_12 - imgtoolPy
 
 ![](https://github.com/rita-ni/group_12/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/rita-ni/group_12/branch/master/graph/badge.svg)](https://codecov.io/gh/rita-ni/group_12) ![Release](https://github.com/rita-ni/group_12/workflows/Release/badge.svg)
 
@@ -33,7 +33,7 @@ pip install -i https://test.pypi.org/simple/ group_12
 
 ### Related Packages
 
-  There are a few existing Python packages that perform content-aware image resizing, such as `pyCAIR` (available on PyPI https://pypi.org/project/pyCAIR/), and `seam-carver` (https://pypi.org/project/seam-carver/). Currently, there is no package available on CRAN to resize images based on the same mechanism, however, there is a package available on Github to seam carve image (https://github.com/vgorte/SC-Package-R). These packages use the seam carving process to increase or decrease the size of the image by finding the seam with the lowest energy values from the energy map. Our implementation of image resizing is a less sophisticated version of seam carving, which focuses on downsizing images by removing low-energy vertical seams.
+  There are a few existing Python packages that perform content-aware image resizing, such as `pyCAIR` (available on [PyPI](https://pypi.org/project/pyCAIR/)), and [seam-carver](https://pypi.org/project/seam-carver/). Currently, there is no package available on CRAN to resize images based on the same mechanism, however, there is a package available on Github to [seam carve image](https://github.com/vgorte/SC-Package-R). These packages use the seam carving process to increase or decrease the size of the image by finding the seam with the lowest energy values from the energy map. Our implementation of image resizing is a less sophisticated version of seam carving, which focuses on downsizing images by removing low-energy vertical seams. Also, there are similar packages for image manipulation such as [scikit-image](https://github.com/scikit-image/scikit-image), which could be used for filtering and transforming images. 
 
 ### Dependencies
 
