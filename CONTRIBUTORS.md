@@ -9,6 +9,6 @@
 
 * Ruidan Ni <niruidan@gmail.com>
 
-* Kexin Zhao <>
+* Kexin Zhao <margaretzhao@yahoo.com>
 
-* Frank Lu <>
+* Frank Lu <franklu@live.ca>
