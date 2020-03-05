@@ -1,4 +1,4 @@
-Welcome to group_12's documentation!
+Welcome to imgtoolPy's documentation!
 ======================================
 
 .. toctree::

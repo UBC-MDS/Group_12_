@@ -1,8 +1,8 @@
-## group_12 - imgtoolPy
+## imgtoolPy 
 
-![](https://github.com/rita-ni/group_12/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/rita-ni/group_12/branch/master/graph/badge.svg)](https://codecov.io/gh/rita-ni/group_12) ![Release](https://github.com/rita-ni/group_12/workflows/Release/badge.svg)
+![](https://github.com/rita-ni/imgtoolPy/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/rita-ni/imgtoolPy/branch/master/graph/badge.svg)](https://codecov.io/gh/rita-ni/imgtoolPy) ![Release](https://github.com/rita-ni/imgtoolPy/workflows/Release/badge.svg)
 
-[![Documentation Status](https://readthedocs.org/projects/group_12/badge/?version=latest)](https://group_12.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/imgtoolPy/badge/?version=latest)](https://imgtoolPy.readthedocs.io/en/latest/?badge=latest)
 
 ### Package Overview
 
@@ -28,7 +28,7 @@ Our package only allows the input image to be a 3D numpy array and output the ma
 ### Installation:
 
 ```
-pip install -i https://test.pypi.org/simple/ group_12
+pip install -i https://test.pypi.org/simple/imgtoolPy
 ```
 
 ### Related Packages
@@ -44,7 +44,9 @@ pip install -i https://test.pypi.org/simple/ group_12
 - TODO
 
 ### Documentation
-The official documentation is hosted on Read the Docs: <https://group_12.readthedocs.io/en/latest/>
+The official documentation is hosted on Read the Docs: <https://imgtoolPy.readthedocs.io/en/latest/>
 
 ### Credits
 This package was created with Cookiecutter and the UBC-MDS/cookiecutter-ubc-mds project template, modified from the [pyOpenSci/cookiecutter-pyopensci](https://github.com/pyOpenSci/cookiecutter-pyopensci) project template and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage).
+# test-rename
+# test-rename

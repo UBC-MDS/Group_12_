@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use group_12 in a project::
+To use imgtoolPy in a project::
 
-    from group_12 import group_12
+    from imgtoolPy import imgtoolPy
