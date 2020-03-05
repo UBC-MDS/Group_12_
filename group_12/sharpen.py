@@ -33,9 +33,4 @@ def sharpen(img):
     I_filt = np.maximum(0, I_filt) # set negative values to 0, for visualization purposes
     I_filt = np.minimum(1, I_filt) # set values greater than 1 to 1, for visualization purposes
 
-    if np.sum(flt) == 0: # a trick to make the images easier to see, not part of the "math"
-        I_filt/np.max(I_filt)
-    else:
-        I_filt
-
-    return I_filt
+    return (I_filt - np.min(I_filt)) / (np.max(I_filt) - np.min(I_filt))
