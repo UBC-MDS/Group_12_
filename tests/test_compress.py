@@ -1,7 +1,6 @@
 from group_12.compress import compress
 from numpy import random
 
-#img = random.random((50,50,3))
 
 def test_compress():
     '''
