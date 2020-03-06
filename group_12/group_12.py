@@ -18,25 +18,6 @@ def compress(img, b):
     """
 
 
-def sharpen(img):
-    """
-    Detects and enhances the edges in the image and
-    returns a sharpened version (the same size as the original).
-
-    Parameters
-    ----------
-    img : a (H,W,3) numpy array
-      the image to be processed
-
-    Returns
-    --------
-    img : a (H,W,3) numpy array, returns the sharpened image
-
-    """
-    return
-
-
-
 def shrink(img, width, height):
     """ A function that performs vertical seam carve for image shrinking.
     Given the a image matrix as input and specified height and width,
