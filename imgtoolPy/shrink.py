@@ -1,3 +1,4 @@
+# Author: Rita Ni
 import numpy as np
 
 def shrink(image, width, height):
