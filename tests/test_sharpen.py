@@ -1,4 +1,4 @@
-from group_12.sharpen import sharpen, read_image
+from imgtoolPy.sharpen import sharpen, read_image
 import matplotlib.pyplot as plt
 from numpy import random
 import pytest
