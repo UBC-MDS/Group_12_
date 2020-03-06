@@ -25,7 +25,17 @@ def sharpen(img):
     img : a (H,W) numpy array, returns the sharpened and monotoned image
 
     """
+    if (type(img) != np.ndarray) or (len(img.shape) != 3):
+        raise TypeError('Invalid Type: input type for image must be 3D array')
+    # make sure the input image is at least 10x of the filter
+    if (img.shape[0] < 50 or img.shape[1] < 50):
+        raise ValueError('Input image should have height and width greater than 50 x 50')
+    if (np.min(img) < 0 or np.max(img) > 1):
+        raise ValueError('Input image should have values between 0 and 1')
+
     img2 = rgb2gray(img)
+
+    # Create a 2-D array with 1 in the center and negative otherwise to highlight the edge
     flt = -np.ones((3,3))/22
     flt[1,1] = 1
 
