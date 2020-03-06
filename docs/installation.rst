@@ -8,13 +8,13 @@ Installation
 Stable release
 --------------
 
-To install group_12, run this command in your terminal:
+To install imgtoolPy, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install -i https://test.pypi.org/simple/ group_12
+    $ pip install -i https://test.pypi.org/simple/imgtoolPy
 
-This is the preferred method to install group_12, as it will always install the most recent stable release.
+This is the preferred method to install imgtoolPy, as it will always install the most recent stable release.
 
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
@@ -32,13 +32,13 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/rita-ni/group_12
+    $ git clone git://github.com/rita-ni/imgtoolPy
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/rita-ni/group_12/tarball/master
+    $ curl  -OL https://github.com/rita-ni/imgtoolPy/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/rita-ni/group_12
-.. _tarball: https://github.com/rita-ni/group_12/tarball/master
+.. _Github repo: https://github.com/rita-ni/imgtoolPy
+.. _tarball: https://github.com/rita-ni/imgtoolPy/tarball/master
