@@ -21,7 +21,7 @@ Our package only allows the input image to be a 3D numpy array and output the ma
   - This function enhances the edges in the image and returns a sharper-looking image.  At this moment, this function is restricted to gray-scale images only 
   
 - `shrink`:
-  - A function that performs vertical seam carve for image shrinking. This function take image input in the form of a matrix.
+  - A function that shrink image size by removing border pixels until desired height and width are reached. This function take image input in the form of a 3D matrix.
 
 
 
