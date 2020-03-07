@@ -17,9 +17,9 @@ def test_crop_output():
 
     assert shrink(image, 15, 15).shape[0:2] == (15, 15)
 
-    assert shrink(image, 20, 20).shape[0:2] == (6, 6)
+    assert shrink(image, 20, 20).shape[0:2] == (20, 20)
 
-    assert shrink(image, 20, 20).shape[3] == 3
+    assert shrink(image, 20, 20).shape[2] == 3
 
     assert len(shrink(image, 20, 20).shape) == 3
 
