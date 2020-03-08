@@ -37,16 +37,33 @@ pip install -i https://test.pypi.org/simple/imgtoolPy
 
 ### Dependencies
 
-- TODO
+[tool.poetry.dependencies]
+- python = "^3.7"
+- sklearn = "^0.0"
+- numpy = "^1.18.1"
+- pandas = "^1.0.1"
+- scipy = "^1.4.1"
+- scikit-image = "^0.16.2"
+
+[tool.poetry.dev-dependencies]
+- pytest-cov = "^2.8.1"
+- pytest = "^5.3.5"
+- sphinx = "^2.4.3"
+- sphinxcontrib-napoleon = "^0.7"
+
 
 ### Usage
 
-- TODO
+|Task    |  After import `imgtoolPy`   |
+|---------|---------------------|
+|Compress an image to 3 bits per channel |  `imgtoolPy.compress(image, 3)` |
+|Sharpen an image by detecting and enhancing the edges|  `imgtoolPy.sharpen(image)`|
+|Shrink an image to desired width and height  |  `imgtoolPy.shrink(image, 20, 20)`|
+
+
 
 ### Documentation
 The official documentation is hosted on Read the Docs: <https://imgtoolPy.readthedocs.io/en/latest/>
 
 ### Credits
 This package was created with Cookiecutter and the UBC-MDS/cookiecutter-ubc-mds project template, modified from the [pyOpenSci/cookiecutter-pyopensci](https://github.com/pyOpenSci/cookiecutter-pyopensci) project template and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage).
-# test-rename
-# test-rename
