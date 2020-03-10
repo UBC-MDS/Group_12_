@@ -4,8 +4,8 @@ import pytest
 
 
 # test examples
-img = random.random((50,50,3))
-img_wrong = random.random((50,50))
+img = random.random((50, 50, 3))
+img_wrong = random.random((50, 50))
 img_wrong2 = random.random((1))
 
 
@@ -16,11 +16,12 @@ def test_compress():
     checking the shape and type is correct.
     '''
     img2 = compress(img, 3)
-    
+
     # assert img2.shape[0] == img.shape[0]
     assert img2.shape[1] == img.shape[1]
-    assert len(img2.shape) == 3 
+    assert len(img2.shape) == 3
     assert img2.shape[0] == img.shape[0]
+
 
 def test_compress_error():
     '''
@@ -35,7 +36,3 @@ def test_compress_error():
         compress(img_wrong2, 2)
     with pytest.raises(ValueError):
         compress(img, -3)
-
-
-
-
