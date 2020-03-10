@@ -3,10 +3,10 @@ from numpy import random
 import pytest
 
 
+image = random.random((50, 50, 3))
+image_wrong_type = [1, 2, 3]
+image_wrong_dim = random.random((50, 50))
 
-image = random.random((50,50,3))
-image_wrong_type = [1,2,3]
-image_wrong_dim = random.random((50,50))
 
 def test_crop_output():
     '''
@@ -25,17 +25,17 @@ def test_crop_output():
 
 
 def test_shrink_error():
-        '''
-        This function test the error handling when invalid inputs
-        are entered
-        '''
-        with pytest.raises(TypeError):
-            shrink(image, 5.1, 5)
-        with pytest.raises(ValueError):
-            shrink(image, -1, 1)
-        with pytest.raises(ValueError):
-            shrink(image, 80, 80)
-        with pytest.raises(TypeError):
-            shrink(image_wrong_type, 10, 10)
-        with pytest.raises(TypeError):
-            shrink(image_wrong_dim, 10, 10)
+    '''
+    This function test the error handling when invalid inputs
+    are entered
+    '''
+    with pytest.raises(TypeError):
+        shrink(image, 5.1, 5)
+    with pytest.raises(ValueError):
+        shrink(image, -1, 1)
+    with pytest.raises(ValueError):
+        shrink(image, 80, 80)
+    with pytest.raises(TypeError):
+        shrink(image_wrong_type, 10, 10)
+    with pytest.raises(TypeError):
+        shrink(image_wrong_dim, 10, 10)
