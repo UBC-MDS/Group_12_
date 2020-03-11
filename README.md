@@ -1,8 +1,9 @@
 ## imgtoolPy 
 
-![](https://github.com/rita-ni/imgtoolPy/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/rita-ni/imgtoolPy/branch/master/graph/badge.svg)](https://codecov.io/gh/rita-ni/imgtoolPy) ![Release](https://github.com/rita-ni/imgtoolPy/workflows/Release/badge.svg)
+![build](https://github.com/UBC-MDS/imgtoolPy/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/UBC-MDS/imgtoolPy/branch/master/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/imgtoolPy) ![Release](https://github.com/UBC-MDS/imgtoolPy/workflows/Release/badge.svg)
 
 [![Documentation Status](https://readthedocs.org/projects/imgtoolPy/badge/?version=latest)](https://imgtoolPy.readthedocs.io/en/latest/?badge=latest)
+
 
 ### Package Overview
 
