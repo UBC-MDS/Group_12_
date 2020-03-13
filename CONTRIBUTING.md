@@ -104,7 +104,7 @@ Before you submit a pull request, check that it meets these guidelines:
 To run a subset of tests:
 
 ```
-py.test tests.test_imgtoolPy
+py.test tests.test_imgtoolpy
 ```
 
 ## Deploying

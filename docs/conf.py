@@ -101,7 +101,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'imgtoolPydoc'
+htmlhelp_basename = 'imgtoolpydoc'
 
 
 # -- Options for LaTeX output ------------------------------------------

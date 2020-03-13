@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use imgtoolPy in a project::
+To use imgtoolpy in a project::
 
-    from imgtoolPy import imgtoolPy
+    from imgtoolpy import imgtoolpy
