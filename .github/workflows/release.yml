@@ -41,8 +41,7 @@ jobs:
       uses: actions/checkout@master
       with:
         ref: master
-        fetch-depth: '0'
-        
+        fetch-depth: '0' 
     - name: Temporarily disable "include administrators" branch protection
       uses: benjefferies/branch-protection-bot@master
       if: always()
@@ -68,8 +67,8 @@ jobs:
       if: always()  # Force to always run this step to ensure "include administrators" is always turned back on
       with:
         access-token: ${{ secrets.ACCESS_TOKEN }}
-        owner: <github_username_or_org>
-        repo: <github_repo_name>
+        owner: rita-ni
+        repo: imgtoolPy
     - name: Release tag
       run: |
         echo ::set-output name=release_tag::$(grep "version" */__init__.py | cut -d "'" -f 2 | cut -d '"' -f 2)
@@ -78,7 +77,7 @@ jobs:
       id: create_release
       uses: actions/create-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.RNGITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ${{ steps.release.outputs.release_tag }}
         release_name: ${{ steps.release.outputs.release_tag }}
