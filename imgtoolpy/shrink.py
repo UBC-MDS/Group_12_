@@ -22,7 +22,7 @@ def shrink(image, width, height):
 
       Examples
       -------
-      >>> imgtoolpy.shrink(image, width = 20, height = 20)
+      >>> shrink(image, width = 20, height = 20)
 
       """
     # checking if input is valid
