@@ -67,7 +67,7 @@ jobs:
       if: always()  # Force to always run this step to ensure "include administrators" is always turned back on
       with:
         access-token: ${{ secrets.ACCESS_TOKEN }}
-        owner: rita-ni
+        owner: UBC-MDS
         repo: imgtoolPy
     - name: Release tag
       run: |
