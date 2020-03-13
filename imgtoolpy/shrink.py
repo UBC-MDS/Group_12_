@@ -1,4 +1,3 @@
-# Author: Rita Ni
 import numpy as np
 
 
@@ -23,7 +22,7 @@ def shrink(image, width, height):
 
       Examples
       -------
-      >>> imgtoolPy.shrink(image, width = 20, height = 20)
+      >>> imgtoolpy.shrink(image, width = 20, height = 20)
 
       """
     # checking if input is valid

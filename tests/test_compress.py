@@ -1,4 +1,4 @@
-from imgtoolPy.compress import compress
+from imgtoolpy.compress import compress
 from numpy import random
 import pytest
 
