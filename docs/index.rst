@@ -1,4 +1,4 @@
-Welcome to imgtoolPy's documentation!
+Welcome to imgtoolpy's documentation!
 ======================================
 
 .. toctree::

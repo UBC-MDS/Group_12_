@@ -1,4 +1,4 @@
-from imgtoolPy.sharpen import sharpen, read_image
+from imgtoolpy.sharpen import sharpen, read_image
 import numpy as np
 from numpy import random
 import pytest

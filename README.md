@@ -1,13 +1,13 @@
-## imgtoolPy 
+## imgtoolpy 
 
-![build](https://github.com/UBC-MDS/imgtoolPy/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/UBC-MDS/imgtoolPy/branch/master/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/imgtoolPy) ![Release](https://github.com/UBC-MDS/imgtoolPy/workflows/Release/badge.svg)
+![build](https://github.com/UBC-MDS/imgtoolpy/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/UBC-MDS/imgtoolpy/branch/master/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/imgtoolpy) ![Release](https://github.com/UBC-MDS/imgtoolpy/workflows/Release/badge.svg)
 
-[![Documentation Status](https://readthedocs.org/projects/imgtoolPy/badge/?version=latest)](https://imgtoolPy.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/imgtoolpy/badge/?version=latest)](https://imgtoolpy.readthedocs.io/en/latest/?badge=latest)
 
 
 ### Package Overview
 
-`imgtoolPy` is a Python package that is intended to allow users to compress, sharpen and shrink an input image. 
+`imgtoolpy` is a Python package that is intended to allow users to compress, sharpen and shrink an input image. 
 Our package only allows the input image to be a 3D numpy array and output the manipulated image as a 3D numpy array. It contains three functions: `compress()`, `sharpen()`, and `shrink()`. 
 
 
@@ -29,7 +29,7 @@ Our package only allows the input image to be a 3D numpy array and output the ma
 ### Installation:
 
 ```
-pip install -i https://test.pypi.org/simple/imgtoolPy
+pip install -i https://test.pypi.org/simple/imgtoolpy
 ```
 
 ### Related Packages
@@ -55,16 +55,16 @@ pip install -i https://test.pypi.org/simple/imgtoolPy
 
 ### Usage
 
-|Task    |  After import `imgtoolPy`   |
+|Task    |  After import `imgtoolpy`   |
 |---------|---------------------|
-|Compress an image to 3 bits per channel |  `imgtoolPy.compress(image, 3)` |
-|Sharpen an image by detecting and enhancing the edges|  `imgtoolPy.sharpen(image)`|
-|Shrink an image to desired width and height  |  `imgtoolPy.shrink(image, 20, 20)`|
+|Compress an image to 3 bits per channel |  `imgtoolpy.compress(image, 3)` |
+|Sharpen an image by detecting and enhancing the edges|  `imgtoolpy.sharpen(image)`|
+|Shrink an image to desired width and height  |  `imgtoolpy.shrink(image, 20, 20)`|
 
 
 
 ### Documentation
-The official documentation is hosted on Read the Docs: <https://imgtoolPy.readthedocs.io/en/latest/>
+The official documentation is hosted on Read the Docs: <https://imgtoolpy.readthedocs.io/en/latest/>
 
 ### Credits
 This package was created with Cookiecutter and the UBC-MDS/cookiecutter-ubc-mds project template, modified from the [pyOpenSci/cookiecutter-pyopensci](https://github.com/pyOpenSci/cookiecutter-pyopensci) project template and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage).

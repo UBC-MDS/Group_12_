@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "imgtoolPy"
-version = "0.1.0"
+name = "imgtoolpy"
+version = "0.1.1-alpha.0"
 description = "A python package to process image"
 authors = ["Rita Ni <niruidan@gmail.com>"]
 license = "MIT"
@@ -12,6 +12,7 @@ numpy = "^1.18.1"
 pandas = "^1.0.1"
 scipy = "^1.4.1"
 scikit-image = "^0.16.2"
+python-semantic-release = "^4.10.0"
 
 [tool.poetry.dev-dependencies]
 pytest-cov = "^2.8.1"
@@ -25,7 +26,8 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 
 [tool.semantic_release]
-version_variable = "imgtoolPy/__init__.py:__version__"
+version_variable = "imgtoolpy/__init__.py:__version__"
 version_source = "commit"
 upload_to_pypi = "false"
 patch_without_tag = "true"
+

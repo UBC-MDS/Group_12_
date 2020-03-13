@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=imgtoolPy
+set SPHINXPROJ=imgtoolpy
 
 if "%1" == "" goto help
 

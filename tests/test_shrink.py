@@ -1,4 +1,4 @@
-from imgtoolPy.shrink import shrink
+from imgtoolpy.shrink import shrink
 from numpy import random
 import pytest
 
