@@ -5,6 +5,15 @@
 [![Documentation Status](https://readthedocs.org/projects/imgtoolpy/badge/?version=latest)](https://imgtoolpy.readthedocs.io/en/latest/?badge=latest)
 
 
+### Team Members
+
+|Name    |  Github   |
+|---------|---------------------|
+|Ruidan Ni |  [rita-ni](https://github.com/rita-ni)|
+|Frank Lu|  [Frank Lu](https://github.com/franklu2014)|
+|Kexin Zhao| [Margaret8521](https://github.com/Margaret8521)|
+
+
 ### Package Overview
 
 `imgtoolpy` is a Python package that is intended to allow users to compress, sharpen and shrink an input image. 
@@ -29,12 +38,12 @@ Our package only allows the input image to be a 3D numpy array and output the ma
 ### Installation:
 
 ```
-pip install -i https://test.pypi.org/simple/imgtoolpy
+pip install -i https://test.pypi.org/simple/ imgtoolpy
 ```
 
 ### Related Packages
 
-  There are a few existing Python packages that perform content-aware image resizing, such as `pyCAIR` (available on [PyPI](https://pypi.org/project/pyCAIR/)), and [seam-carver](https://pypi.org/project/seam-carver/). Currently, there is no package available on CRAN to resize images based on the same mechanism, however, there is a package available on Github to [seam carve image](https://github.com/vgorte/SC-Package-R). These packages use the seam carving process to increase or decrease the size of the image by finding the seam with the lowest energy values from the energy map. Our implementation of image resizing is a less sophisticated version of seam carving, which focuses on downsizing images by removing low-energy vertical seams. Also, there are similar packages for image manipulation such as [scikit-image](https://github.com/scikit-image/scikit-image), which could be used for filtering and transforming images. 
+  There are a few existing Python packages that perform content-aware image resizing, such as `pyCAIR` (available on [PyPI](https://pypi.org/project/pyCAIR/)), and [seam-carver](https://pypi.org/project/seam-carver/). Currently, there is no package available on CRAN to resize images based on the same mechanism, however, there is a package available on Github to [seam carve image](https://github.com/vgorte/SC-Package-R).  Also, there are similar packages for image manipulation such as [scikit-image](https://github.com/scikit-image/scikit-image), which could be used for filtering and transforming images. 
 
 ### Dependencies
 
