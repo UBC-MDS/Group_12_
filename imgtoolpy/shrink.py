@@ -1,7 +1,8 @@
 import numpy as np
 from imgtoolpy.toy_img import img as image
 
-def shrink(image, width, height):
+
+def shrink(img, width, height):
     """
     This function shrink image to desired width and height by
     removing pixels from border.
@@ -9,7 +10,7 @@ def shrink(image, width, height):
       Arguments
       ---------
 
-          image : numpy.ndarray
+          img : numpy.ndarray
               An image as a 3D numpy array
           width : int
               Desired width of shrinked image
@@ -26,7 +27,7 @@ def shrink(image, width, height):
 
       """
     # checking if input is valid
-    if (type(image) != np.ndarray) or (len(image.shape) != 3):
+    if (not isinstance(image, np.ndarray)) or (len(image.shape) != 3):
         raise TypeError('Invalid Type: input type for image must be 3D array')
     if (width % 1 != 0) or (height % 1 != 0):
         raise TypeError(
@@ -45,25 +46,25 @@ def shrink(image, width, height):
     # When number of rows to crop out is even, remove equal
     # number of rows from top and bottom border
     if crop_row % 2 == 0:
-        top_row = int(crop_row/2)
+        top_row = int(crop_row / 2)
         bottom_row = int(image.shape[0] - top_row)
 
     # When number of rows to crop out is odd, remove 1 more
     # row from top than bottom border
     else:
-        top_row = int((crop_row + 1)/2)
+        top_row = int((crop_row + 1) / 2)
         bottom_row = int(image.shape[0] - top_row + 1)
 
     # When number of columns to crop out is even, remove equal
     # number of columns from left and right border
     if crop_col % 2 == 0:
-        left_col = int(crop_col/2)
+        left_col = int(crop_col / 2)
         right_col = int(image.shape[1] - left_col)
 
     # When number of columns to crop out is odd, remove 1 more
     # columns from left than right border
     else:
-        left_col = int((crop_col + 1)/2)
+        left_col = int((crop_col + 1) / 2)
         right_col = int(image.shape[1] - left_col + 1)
 
     # Shrink image by cropping rows and columns
