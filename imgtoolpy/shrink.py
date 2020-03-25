@@ -1,5 +1,5 @@
 import numpy as np
-
+from imgtoolpy.toy_img import img as image
 
 def shrink(image, width, height):
     """
@@ -22,7 +22,7 @@ def shrink(image, width, height):
 
       Examples
       -------
-      >>> shrink(image, width = 20, height = 20)
+      >>> shrink(img, width = 20, height = 20)
 
       """
     # checking if input is valid
