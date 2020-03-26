@@ -1,9 +1,8 @@
 from imgtoolpy.shrink import shrink
 from numpy import random
 import pytest
+from imgtoolpy.toy_img import img as image
 
-
-image = random.random((50, 50, 3))
 image_wrong_type = [1, 2, 3]
 image_wrong_dim = random.random((50, 50))
 
@@ -34,7 +33,7 @@ def test_shrink_error():
     with pytest.raises(ValueError):
         shrink(image, -1, 1)
     with pytest.raises(ValueError):
-        shrink(image, 80, 80)
+        shrink(image, 2000, 2000)
     with pytest.raises(TypeError):
         shrink(image_wrong_type, 10, 10)
     with pytest.raises(TypeError):
