@@ -34,6 +34,8 @@ def compress(img, b):
         raise ValueError("b should be positive!")
     if (img.ndim != 3) or (type(img) != np.ndarray):
         raise TypeError("The dimension of the input image must be 3D array")
+    if img.shape[2] != 3:
+        raise ValueError("The image must be 3 channels")
 
     # the function
     H, W, _ = img.shape
