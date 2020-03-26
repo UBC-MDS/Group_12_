@@ -25,24 +25,12 @@ Our package only allows the input image to be a 3D numpy array and output the ma
 - `compress`:
   - This function quantizes an image by restricting each pixel to only take on one of the desired colour values
   and return a version of the image (the same size as the original) where each pixel's original colour is replaced with the nearest prototype colour.
-<<<<<<< HEAD
 
-
-- `sharpen`:
-  - This function enhances the edges in the image and returns a sharper-looking image.  At this moment, this function is restricted to gray-scale images only
-
-- `crop`:
-  - A function that crop image size by removing border pixels until desired height and width are reached. This function take image input in the form of a 3D array.
-=======
-  
 - `crop`:
   - A function that crop image size by removing border pixels until desired height and width are reached. This function take image input in the form of a 3D array.
 
 - `sharpen`:
-  - This function enhances the edges in the image and returns a sharper-looking image.  At this moment, this function is restricted to gray-scale images only 
-  
-
->>>>>>> 6771f1b46ca4a58b6731bd069caadef5fb2c9060
+  - This function enhances the edges in the image and returns a sharper-looking image.  At this moment, this function is restricted to gray-scale images only
 
 
 
