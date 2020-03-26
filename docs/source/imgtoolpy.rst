@@ -20,10 +20,10 @@ imgtoolpy.sharpen module
    :undoc-members:
    :show-inheritance:
 
-imgtoolpy.shrink module
+imgtoolpy.crop module
 -----------------------
 
-.. automodule:: imgtoolpy.shrink
+.. automodule:: imgtoolpy.crop
    :members:
    :undoc-members:
    :show-inheritance:

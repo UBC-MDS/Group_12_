@@ -1,9 +1,9 @@
 import numpy as np
 
 
-def shrink(image, width, height):
+def crop(image, width, height):
     """
-    This function shrink image to desired width and height by
+    This function crop image to desired width and height by
     removing pixels from border.
 
       Arguments
@@ -12,17 +12,17 @@ def shrink(image, width, height):
           image : numpy.ndarray
               An image as a 3D numpy array
           width : int
-              Desired width of shrinked image
+              Desired width of croped image
           height : int
-              Desired height of shirnked image
+              Desired height of croped image
       Returns
       -------
           numpy array
-              Shrinked image as 3D array
+              croped image as 3D array
 
       Examples
       -------
-      >>> shrink(image, width = 20, height = 20)
+      >>> crop(image, width = 20, height = 20)
 
       """
     # checking if input is valid
@@ -66,7 +66,7 @@ def shrink(image, width, height):
         left_col = int((crop_col + 1)/2)
         right_col = int(image.shape[1] - left_col + 1)
 
-    # Shrink image by cropping rows and columns
-    shrinked = image[top_row:bottom_row, left_col:right_col, :]
+    # crop image by cropping rows and columns
+    croped = image[top_row:bottom_row, left_col:right_col, :]
 
-    return shrinked
+    return croped
