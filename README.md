@@ -82,7 +82,7 @@ We are going to use `butterfly.jpg` image which is in the `img` folder of this r
 We can apply the compress function:
 `compress.compress(image, 4)`
 
-```
+```python
 import os
 
 from matplotlib.pyplot import imread, imshow, imsave
@@ -98,7 +98,7 @@ We can also apply the crop function:
 `crop.crop(image, 400, 400)`
 
 
-```
+```python
 import os
 
 from matplotlib.pyplot import imread, imshow, imsave
@@ -125,9 +125,7 @@ imsave(os.path.join("img", "sharpen_before.png"), res[0], cmap = cm.gray)
 imsave(os.path.join("img", "sharpen_after.png"), res[1], cmap = cm.gray)
 ```
 
-![](img/sharpen_before.png =400x300) ![](img/sharpen_after.png =400x300)
-
-<img src="img/sharpen_before.png" data-canonical-src="img/sharpen_before.png" width="400" height="300" />
+<img src="img/sharpen_before.png" data-canonical-src="img/sharpen_before.png" width="400" height="300" />  <img src="img/sharpen_after.png" data-canonical-src="img/sharpen_after.png" width="400" height="300" />
 
 
 
