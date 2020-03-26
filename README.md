@@ -64,11 +64,61 @@ pip install -i https://test.pypi.org/simple/ imgtoolpy
 
 ### Usage
 
-|Task    |  After import `imgtoolpy`   |
+|Task    |  `from imgtoolpy import compress, crop, sharpen`   |
 |---------|---------------------|
-|Compress an image to 3 bits per channel |  `imgtoolpy.compress(image, 3)` |
-|Sharpen an image by detecting and enhancing the edges|  `imgtoolpy.sharpen(image)`|
-|crop an image to desired width and height  |  `imgtoolpy.crop(image, 20, 20)`|
+|Compress an image to 3 bits per channel (2^3=8 colors)|  `compress.compress(image, 3)` |
+|crop an image to desired width and height  |  `crop.crop(image, 20, 20)`|
+|Sharpen an image by detecting and enhancing the edges|  `sharpen.sharpen(image)`|
+
+### Usage Scenarios
+
+First, we should load the imgtoolpy library:
+
+`from imgtoolpy import compress, crop, sharpen`
+
+We are going to use `butterfly.jpg` image which is in the `img` folder of this repository for illustration.
+
+![](img/butterfly.jpg)
+
+We can apply the compress function:
+`compress.compress(image, 3)`
+
+```
+import os
+
+from matplotlib.pyplot import imread, imshow, imsave
+
+image = imread(os.path.join("butterfly.jpg"))
+
+imsave(os.path.join('compress.jpg'), compress.compress(image, 4))
+```
+![](img/compress.jpg)
+
+
+We can also apply the crop function:
+`crop.crop(image, 400, 400)`
+
+
+```
+import os
+
+from matplotlib.pyplot import imread, imshow, imsave
+
+image = imread(os.path.join("butterfly.jpg"))
+
+imsave(os.path.join('crop.jpg'), crop.crop(image, 400, 400))
+```
+
+![](img/crop.jpg)
+
+We can also apply the sharpen function:
+`sharpen.sharpen(image)`
+
+
+
+
+
+
 
 
 
