@@ -21,15 +21,18 @@ def sharpen(img):
 
     Returns
     --------
-    (img2, img2_sharpened) : two (H,W) numpy arrays; returns the original and sharpened images, both monotoned
-        
+    (img2, img2_sharpened) : two (H,W) numpy arrays
+        the original and sharpened images, both monotoned
+
     Examples
     --------
     >>> sharpen(image)
 
     """
-    if (type(img) != np.ndarray) or (len(img.shape) != 3) or (img.shape[2] != 3):
-        raise TypeError('Invalid Type: input type for image must be 3D H*W*3 array')
+    if (type(img) != np.ndarray) or (len(img.shape) != 3) or  \
+            (img.shape[2] != 3):
+        raise TypeError('Invalid Type: input type for image must be 3D H*W*3 \
+            array')
     # make sure the input image is at least 10x of the filter
     if (img.shape[0] < 50 or img.shape[1] < 50):
         raise ValueError(
@@ -49,6 +52,7 @@ def sharpen(img):
 
     I_filt = convolve2d(img2, flt, boundary='symm', mode='same')
     # normalize the brightness of the sharpened image
-    img2_sharpened = (I_filt - np.min(I_filt)) / (np.max(I_filt) - np.min(I_filt))
+    img2_sharpened = (I_filt - np.min(I_filt)) / \
+        (np.max(I_filt) - np.min(I_filt))
 
     return img2, img2_sharpened

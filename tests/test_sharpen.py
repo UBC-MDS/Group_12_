@@ -1,5 +1,4 @@
 from imgtoolpy.sharpen import sharpen, read_image
-import numpy as np
 from numpy import random
 import pytest
 
@@ -23,7 +22,7 @@ def test_sharpen():
     assert img_orig.shape[0] == 1066
     assert img_orig.shape[1] == 1599
     assert len(img_orig.shape) == 2
-    
+
     assert img_sharpened.shape[0] == 1066
     assert img_sharpened.shape[1] == 1599
     assert len(img_sharpened.shape) == 2
