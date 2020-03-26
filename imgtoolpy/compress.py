@@ -20,6 +20,11 @@ def compress(img, b):
     --------
     img : a (H,W,3) numpy array, returns the compressed image
 
+    Examples
+    ---------
+    >>> compress(img, 3)
+
+
     """
 
     # inpute tests
