@@ -7,6 +7,7 @@ import pytest
 img = random.random((50, 50, 3))
 img_wrong = random.random((50, 50))
 img_wrong2 = random.random((1))
+img_wrong3 = random.random((50, 50, 4))
 
 
 # test functions
@@ -36,3 +37,5 @@ def test_compress_error():
         compress(img_wrong2, 2)
     with pytest.raises(ValueError):
         compress(img, -3)
+    with pytest.raises(ValueError):
+        compress(img_wrong3, 2)
