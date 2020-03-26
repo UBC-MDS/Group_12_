@@ -125,7 +125,7 @@ imsave(os.path.join("img", "sharpen_before.png"), res[0], cmap = cm.gray)
 imsave(os.path.join("img", "sharpen_after.png"), res[1], cmap = cm.gray)
 ```
 
-![](img/sharpen_before.png) ![](img/sharpen_after.png)
+![](img/sharpen_before.png =400x300) ![](img/sharpen_after.png =400x300)
 
 
 
