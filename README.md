@@ -16,8 +16,8 @@
 
 ### Package Overview
 
-`imgtoolpy` is a Python package that is intended to allow users to compress, sharpen and shrink an input image. 
-Our package only allows the input image to be a 3D numpy array and output the manipulated image as a 3D numpy array. It contains three functions: `compress()`, `sharpen()`, and `shrink()`. 
+`imgtoolpy` is a Python package that is intended to allow users to compress, sharpen and crop an input image. 
+Our package only allows the input image to be a 3D numpy array and output the manipulated image as a 3D numpy array. It contains three functions: `compress()`, `sharpen()`, and `crop()`. 
 
 
 ### Feature Description
@@ -30,8 +30,8 @@ Our package only allows the input image to be a 3D numpy array and output the ma
 - `sharpen`:
   - This function enhances the edges in the image and returns a sharper-looking image.  At this moment, this function is restricted to gray-scale images only 
   
-- `shrink`:
-  - A function that shrink image size by removing border pixels until desired height and width are reached. This function take image input in the form of a 3D array.
+- `crop`:
+  - A function that crop image size by removing border pixels until desired height and width are reached. This function take image input in the form of a 3D array.
 
 
 
@@ -68,7 +68,7 @@ pip install -i https://test.pypi.org/simple/ imgtoolpy
 |---------|---------------------|
 |Compress an image to 3 bits per channel |  `imgtoolpy.compress(image, 3)` |
 |Sharpen an image by detecting and enhancing the edges|  `imgtoolpy.sharpen(image)`|
-|Shrink an image to desired width and height  |  `imgtoolpy.shrink(image, 20, 20)`|
+|crop an image to desired width and height  |  `imgtoolpy.crop(image, 20, 20)`|
 
 
 
