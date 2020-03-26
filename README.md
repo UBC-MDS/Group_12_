@@ -26,12 +26,13 @@ Our package only allows the input image to be a 3D numpy array and output the ma
   - This function quantizes an image by restricting each pixel to only take on one of the desired colour values
   and return a version of the image (the same size as the original) where each pixel's original colour is replaced with the nearest prototype colour.
   
+- `crop`:
+  - A function that crop image size by removing border pixels until desired height and width are reached. This function take image input in the form of a 3D array.
 
 - `sharpen`:
   - This function enhances the edges in the image and returns a sharper-looking image.  At this moment, this function is restricted to gray-scale images only 
   
-- `crop`:
-  - A function that crop image size by removing border pixels until desired height and width are reached. This function take image input in the form of a 3D array.
+
 
 
 
@@ -66,13 +67,13 @@ pip install -i https://test.pypi.org/simple/ imgtoolpy
 
 |Task    |  `from imgtoolpy import compress, crop, sharpen`   |
 |---------|---------------------|
-|Compress an image to 3 bits per channel (2^3=8 colors)|  `compress.compress(image, 3)` |
+|Compress an image to 4 bits per channel (2^4=16 colors)|  `compress.compress(image, 4)` |
 |crop an image to desired width and height  |  `crop.crop(image, 20, 20)`|
 |Sharpen an image by detecting and enhancing the edges|  `sharpen.sharpen(image)`|
 
 ### Usage Scenarios
 
-First, we should load the imgtoolpy library:
+First, we should load the `imgtoolpy` library:
 
 `from imgtoolpy import compress, crop, sharpen`
 
@@ -81,7 +82,7 @@ We are going to use `butterfly.jpg` image which is in the `img` folder of this r
 ![](img/butterfly.jpg)
 
 We can apply the compress function:
-`compress.compress(image, 3)`
+`compress.compress(image, 4)`
 
 ```
 import os
