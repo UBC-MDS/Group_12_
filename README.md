@@ -89,9 +89,9 @@ import os
 
 from matplotlib.pyplot import imread, imshow, imsave
 
-image = imread(os.path.join("butterfly.jpg"))
+image = imread(os.path.join("img", "butterfly.jpg"))
 
-imsave(os.path.join('compress.jpg'), compress.compress(image, 4))
+imsave(os.path.join("img", "compress.jpg"), compress.compress(image, 4))
 ```
 ![](img/compress.jpg)
 
@@ -105,9 +105,9 @@ import os
 
 from matplotlib.pyplot import imread, imshow, imsave
 
-image = imread(os.path.join("butterfly.jpg"))
+image = imread(os.path.join("img", "butterfly.jpg"))
 
-imsave(os.path.join('crop.jpg'), crop.crop(image, 400, 400))
+imsave(os.path.join("img", "crop.jpg"), crop.crop(image, 400, 400))
 ```
 
 ![](img/crop.jpg)
