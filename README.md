@@ -127,6 +127,8 @@ imsave(os.path.join("img", "sharpen_after.png"), res[1], cmap = cm.gray)
 
 ![](img/sharpen_before.png =400x300) ![](img/sharpen_after.png =400x300)
 
+<img src="img/sharpen_before.png" data-canonical-src="img/sharpen_before.png" width="400" height="300" />
+
 
 
 ### Documentation
