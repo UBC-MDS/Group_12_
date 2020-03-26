@@ -98,6 +98,7 @@ imsave(os.path.join('compress.jpg'), compress.compress(image, 4))
 We can also apply the crop function:
 `crop.crop(image, 400, 400)`
 
+
 ```
 import os
 
@@ -107,6 +108,7 @@ image = imread(os.path.join("butterfly.jpg"))
 
 imsave(os.path.join('crop.jpg'), crop.crop(image, 400, 400))
 ```
+
 ![](img/crop.jpg)
 
 We can also apply the sharpen function:
