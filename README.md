@@ -119,7 +119,7 @@ import os
 from matplotlib.pyplot import imread, imsave, cm
 
 image = imread(os.path.join("img", "free-wallpaper.jpg"))
-res = sharpen(image)
+res = sharpen.sharpen(image)
 # save the monotoned original image
 imsave(os.path.join("img", "sharpen_before.png"), res[0], cmap = cm.gray)
 # save the sharpened image
